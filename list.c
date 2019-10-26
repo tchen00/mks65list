@@ -10,3 +10,10 @@ void print_list(struct node * n){
   }
   printf("[ ]\n");
 }
+
+struct node * insert_front(struct node * n, int k){
+  struct node *new = malloc(sizeof(struct node));
+  new -> i = k;
+  new -> next = n;
+  return new;
+}
